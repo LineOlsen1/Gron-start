@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Første planteprojekt – Grøn start</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-project">
+  <header class="site-header container">
+    <a class="site-name" href="index.html">Grøn start</a>
+    <nav class="desktop-nav" aria-label="Hovednavigation">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="begynderguide.html">Begynderguide</a></li>
+        <li><a href="udstyr.html">Udstyr</a></li>
+        <li><a href="foerste-planteprojekt.html" aria-current="page">Første planteprojekt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Details åbner og lukker mobilmenuen uden JavaScript. -->
+    <details class="mobile-menu">
+      <summary><span class="menu-open">Menu</span><span class="menu-close">Luk</span></summary>
+      <nav aria-label="Mobilnavigation">
+        <a href="index.html">Forside</a>
+        <a href="begynderguide.html">Begynderguide</a>
+        <a href="udstyr.html">Udstyr</a>
+        <a href="foerste-planteprojekt.html" aria-current="page">Første planteprojekt</a>
+      </nav>
+    </details>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <h1 id="hero-heading">Giv din første plante en god start</h1>
+        <p>Find en passende plads, stil planten klar, og undersøg, om den har brug for vand.</p>
+        <a class="button" href="#plantetrin">Se de tre trin</a>
+      </div>
+      <!-- De to billedudsnit er eksporteret fra de aktuelle Figma-frames. -->
+      <picture class="project-picture">
+        <source media="(min-width: 1200px)" srcset="assets/images/planteprojekt-desktop.png">
+        <img class="hero-image" src="assets/images/planteprojekt-mobil.png" alt="En grøn stueplante ved et åbent vindue">
+      </picture>
+    </section>
+
+    <div class="cards" id="plantetrin">
+      <article class="card">
+        <h2>Find pladsen</h2>
+        <p>Stil planten, hvor lyset passer til dens pasningsråd. Undgå at vælge plads kun efter udseendet.</p>
+      </article>
+      <article class="card">
+        <h2>Stil planten klar</h2>
+        <p>Sæt potten med hul i bunden i en underskål eller skjuler. Planten må ikke stå i overskydende vand.</p>
+      </article>
+      <article class="card">
+        <h2>Tjek vandbehovet</h2>
+        <p>Mærk på jorden, og følg plantens pasningsråd. Vand kun ved behov, og lad overskydende vand løbe fra.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Grøn start — En begynderguide til plantepasning</p>
+  </footer>
+</body>
+</html>

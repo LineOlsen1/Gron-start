@@ -72,7 +72,7 @@ a:focus-visible, summary:focus-visible {
 .mobile-menu nav a { line-height: 28px; }
 .site-name { position: relative; z-index: 2; }
 
-/* Forsidens introduktion */
+/* Fælles introduktion */
 .hero { margin-top: 57px; }
 .hero-text { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
 h1 { font-size: 32px; line-height: 38px; }
@@ -125,6 +125,15 @@ h2 { font-size: 28px; line-height: 32px; }
   line-height: 18px;
 }
 
+/* Begynderguide: billedplacering og footerafstand fra Figma */
+.guide-picture { display: block; min-width: 0; }
+.page-guide .hero-image {
+  width: calc(100% - 1px);
+  aspect-ratio: 341 / 221;
+  margin-top: 49px;
+}
+.page-guide .site-footer { margin-top: 48px; }
+
 /* Praktisk breakpoint: Figma viser 390 og 1440 px, men angiver intet breakpoint.
    Ved 1200 px er der plads til desktopnavigationen og tre kort. */
 @media (min-width: 1200px) {
@@ -156,4 +165,8 @@ h2 { font-size: 28px; line-height: 32px; }
   .hero-image { margin-top: 0; aspect-ratio: 616 / 380; }
   .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 80px; }
   .site-footer { margin-top: 80px; min-height: 160px; padding-top: 46px; }
+  /* Figma reserverer tre tekstlinjer i desktop-introduktionen. */
+  .page-guide .hero-text p { min-height: 81px; }
+  .page-guide .hero-image { width: 100%; aspect-ratio: 616 / 380; margin-top: 0; }
+  .page-guide .site-footer { margin-top: 53px; }
 }

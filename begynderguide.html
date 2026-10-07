@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Begynderguide – Grøn start</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-guide">
+  <header class="site-header container">
+    <a class="site-name" href="index.html">Grøn start</a>
+    <nav class="desktop-nav" aria-label="Hovednavigation">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="begynderguide.html" aria-current="page">Begynderguide</a></li>
+        <li><a href="udstyr.html">Udstyr</a></li>
+        <li><a href="foerste-planteprojekt.html">Første planteprojekt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Details åbner og lukker mobilmenuen uden JavaScript. -->
+    <details class="mobile-menu">
+      <summary><span class="menu-open">Menu</span><span class="menu-close">Luk</span></summary>
+      <nav aria-label="Mobilnavigation">
+        <a href="index.html">Forside</a>
+        <a href="begynderguide.html" aria-current="page">Begynderguide</a>
+        <a href="udstyr.html">Udstyr</a>
+        <a href="foerste-planteprojekt.html">Første planteprojekt</a>
+      </nav>
+    </details>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <h1 id="hero-heading">En god start med din første plante</h1>
+        <p>Find en plads med dagslys, vælg en plante til forholdene, og lær at kontrollere dens vandbehov.</p>
+        <a class="button" href="udstyr.html">Se hvad du skal bruge</a>
+      </div>
+      <!-- De to billedudsnit er eksporteret fra de aktuelle Figma-frames. -->
+      <picture class="guide-picture">
+        <source media="(min-width: 1200px)" srcset="assets/images/begynderguide-desktop.png">
+        <img class="hero-image" src="assets/images/begynderguide-mobil.png" alt="En stueplante bliver vandet med en hvid vandkande">
+      </picture>
+    </section>
+
+    <div class="cards">
+      <article class="card">
+        <h2>Find en plads</h2>
+        <p>Undersøg dagslyset dér, hvor planten skal stå. Ingen planter trives i totalt mørke.</p>
+        <a href="udstyr.html">Se udstyr →</a>
+      </article>
+      <article class="card">
+        <h2>Vælg en plante</h2>
+        <p>Læs plantens mærkat, og vælg en plante, hvis lysbehov passer til pladsen.</p>
+        <a href="udstyr.html">Se udstyr →</a>
+      </article>
+      <article class="card">
+        <h2>Tjek før du vander</h2>
+        <p>Tjek jordens fugtighed og plantens pasningsråd. Vand efter behov.</p>
+        <a href="foerste-planteprojekt.html">Se første planteprojekt →</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Grøn start — En begynderguide til plantepasning</p>
+  </footer>
+</body>
+</html>

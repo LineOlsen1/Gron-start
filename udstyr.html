@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udstyr – Grøn start</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-equipment">
+  <header class="site-header container">
+    <a class="site-name" href="index.html">Grøn start</a>
+    <nav class="desktop-nav" aria-label="Hovednavigation">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="begynderguide.html">Begynderguide</a></li>
+        <li><a href="udstyr.html" aria-current="page">Udstyr</a></li>
+        <li><a href="foerste-planteprojekt.html">Første planteprojekt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Details åbner og lukker mobilmenuen uden JavaScript. -->
+    <details class="mobile-menu">
+      <summary><span class="menu-open">Menu</span><span class="menu-close">Luk</span></summary>
+      <nav aria-label="Mobilnavigation">
+        <a href="index.html">Forside</a>
+        <a href="begynderguide.html">Begynderguide</a>
+        <a href="udstyr.html" aria-current="page">Udstyr</a>
+        <a href="foerste-planteprojekt.html">Første planteprojekt</a>
+      </nav>
+    </details>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <h1 id="hero-heading">Det skal du bruge til din første plante</h1>
+        <p>Start enkelt. Her er det nødvendige udstyr og det, du kan vente med.</p>
+        <a class="button" href="foerste-planteprojekt.html">Start dit første planteprojekt</a>
+      </div>
+      <!-- De to billedudsnit er eksporteret fra de aktuelle Figma-frames. -->
+      <picture class="equipment-picture">
+        <source media="(min-width: 1200px)" srcset="assets/images/udstyr-desktop.png">
+        <img class="hero-image" src="assets/images/udstyr-mobil.png" alt="Grønne og lyse blade på en stueplante ved et vindue">
+      </picture>
+    </section>
+
+    <div class="cards">
+      <article class="card">
+        <h2>Plante og potte</h2>
+        <p>Vælg en plante til lyset i dit hjem og en potte med hul i bunden.</p>
+        <a href="foerste-planteprojekt.html">Se planteprojektet →</a>
+      </article>
+      <article class="card">
+        <h2>Vanding og afdrypning</h2>
+        <p>Brug en vandingsbeholder og en underskål eller skjuler, der kan tømmes.</p>
+        <a href="foerste-planteprojekt.html">Se planteprojektet →</a>
+      </article>
+      <article class="card">
+        <h2>Det kan vente</h2>
+        <p>Ny jord og ompotning er kun nødvendigt, hvis planten har behov for det.</p>
+        <a href="foerste-planteprojekt.html">Se planteprojektet →</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Grøn start — En begynderguide til plantepasning</p>
+  </footer>
+</body>
+</html>
